@@ -6,9 +6,8 @@ mainModule.config(['$routeProvider',
         .when('/home', {
             templateUrl: 'app/build/templates/home.tpl.html',
             controller: 'HomeCtrl'
-            /*redirectTo: '/30/dashboard'*/
-        }),
-        otherwise({
+        })
+        .otherwise({
             redirectTo: '/home'
         });
   }]);
